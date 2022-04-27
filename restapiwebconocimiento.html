@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El blog de Juan Carlos</title>
+
+    <!-- font awesome icons cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
+    <!-- swiper slider css file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.css" integrity="sha512-m3pAvNriL711NMlhkZHK6K4Tu2/RjtrzyjxZU8mlAbxxoDoURy27KajN1LGTLeEEPvaN12mKAgSCrYEwF9y0jA==" crossorigin="anonymous" />
+
+    <!-- custom style.css file -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+<body>
+    
+       <!-- Inicio Navegacion -->
+       <header id="header" class="shadow bg-light">
+           <nav class="container navbar">
+               <h1 class="nav-brand text-dark"><a class="nav-brand text-dark" href="./index.html">El blog de Juan Carlos</a></h1>
+
+                <button class="toggle-button">
+                    <span><img src="./assets/icons/menú-30.png"></span>
+                </button>
+
+                <!-- menus -->
+                <div class="collapse">
+                    <ul class="navbar-nav">
+                        <a href="./index.html" class="nav-link">Inicio</a>
+                        <!-- <a href="#" class="nav-link">Contacto</a>-->
+                    </ul>
+                </div>
+
+                <!-- botones sociales -->
+                <div class="collapse">
+                    <ul class="navbar-nav">
+                        <a href="https://github.com/xxWismaxx" target="_blank" class="nav-link"><img src="./assets/icons/github-30.png"></a>
+                        <a href="https://www.facebook.com/badbody.17/" target="_blank" class="nav-link"><img src="./assets/icons/facebook-30.png"></a>
+                        <a href="https://www.linkedin.com/in/carlos-rivera-26a2441a4/" target="_blank" class="nav-link"><img src="./assets/icons/linkedin-30.png"></a>
+                        <a href="https://www.youtube.com/user/Javierb4311" target="_blank" class="nav-link"><img src="./assets/icons/youtube-30.png"></a>
+                    </ul>
+                </div>
+           </nav>
+       </header>
+       <!-- Fin Navegacion -->
+
+    <!-- Main Site -->
+       <main id="site-main">
+
+            <!-- Post Content -->
+                <section class="container">
+                    <article id="post">
+                        <!-- article heading -->
+                        <div class="text-center">
+                            <div>
+                                <a class="nav-link">Express</a>
+                            </div>
+
+                            <div class="title">
+                                <h2 class="text-title text-dark display-1">API Rest Express de Web objetos de conocimiento en Angular 12</h2>
+                                <span><i class="text-dark">20 de septiembre del 2021</i> </span>
+                            </div>
+
+                        </div>
+
+                        <!-- thumbnail  -->
+                        <div class="thumbnail mt-3">
+                            <img src="./assets/blog2.png" class="thumbnail" alt="">
+                        </div>
+
+                        <!-- content -->
+                        <div class="content text-dark display-2 secondary-title mt-3 justifytext">
+                            <p>Web desarrollada en Angular 12 con la finalidad de contar con una web la cual pueda gestionar archivos
+                                de conocimiento .ZIP, el sitio cuenta con interfaces como login, registro, inicio, agregar y editar, 
+                                en el login contamos con una gestion de roles entre Alumno, Maestro y Administrador, finalmente se 
+                                debe contar con la API Rest que proporciona la conexion.                                
+                            </p>
+                            <p>
+                                Link del código fuente: <a target="_blank" href="https://github.com/xxWismaxx/webConocimiento">https://github.com/xxWismaxx/webConocimiento</a>
+                            </p>
+                            <p>
+                                Aqui les incluyo un par de capturas del sistema:
+                            </p>
+                            <img src="./assets/blog1/1.png" class="img-fluid" alt="">
+                            <img src="./assets/blog1/2.png" class="img-fluid" alt="">
+                            <img src="./assets/blog1/3.png" class="img-fluid" alt="">
+                            <img src="./assets/blog1/4.png" class="img-fluid" alt="">
+                            <img src="./assets/blog1/5.png" class="img-fluid" alt="">
+                        </div>
+                    </article>
+                    
+                </section>
+            <!-- .Post Content -->            
+
+       </main>
+    <!-- .Main Site -->
+
+    <!-- footer -->
+       <footer id="footer">
+            <div class="container">
+               <div class="row mb-3">
+                   <div class="col-3">
+                       <h2 class="text-dark">Acerca de mí</h2>
+                       <div class="secondary-title text-secondary justifytext">
+                            <a class="text-dark"> 
+                                <img src="./assets/avatar.png" class="iconpading rounded" align="left">
+                                Hola soy Juan Carlos Villa Rivera y he participado en multiples proyectos escolares de los 
+                                cuales he obtenido una gran experiencia, tengo la motivación para seguir avanzando en nuevos 
+                                proyectos. Con este blog pretendo otorgarles el poco conocimiento que he adquirido.
+                            </a>                          
+                       </div>
+                   </div>
+
+                   <div class="class="col-3">
+                    <h2 class="text-dark">Contacto</h2>
+                    <div>
+                        <form action="http://localhost/blog/contacto.php" method="post">
+                            <div class=" justify-content-between flex-wrap">
+                                <input type="text" class="form-control" name="nombre" placeholder="Nombre">
+                                <input type="email" class="form-control" name="correo" placeholder="Correo">
+                                <input type="text" class="form-control" name="celular" placeholder="Celular">
+                                <textarea class="form-control mt-3" name="mensaje" placeholder="Mensaje" rows="1"></textarea>
+                            </div>                           
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary display-2 text-light mt-2">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                   </div>
+                   
+                   <div class="col-3">
+                        <h2 class="text-dark">Redes sociales</h2>
+                            <div class="d-flex">
+                                <a href="https://github.com/xxWismaxx" target="_blank" class="nav-link"><img src="./assets/icons/github-30.png"></a>
+                                <a href="https://www.facebook.com/badbody.17/" target="_blank" class="nav-link"><img src="./assets/icons/facebook-30.png"></a>
+                                <a href="https://www.linkedin.com/in/carlos-rivera-26a2441a4/" target="_blank" class="nav-link"><img src="./assets/icons/linkedin-30.png"></a>
+                                <a href="https://www.youtube.com/user/Javierb4311" target="_blank" class="nav-link"><img src="./assets/icons/youtube-30.png"></a>
+                            </div>
+                   </div>
+            </div>
+
+            <div class="copyrights">
+                <p class="text-center text-secondary display-2">
+                    Derechos reservados 2022 | Desarrollado por Juan Carlos Villa Rivera | 2282 5538 41
+                </p>
+            </div>
+           </div>
+       </footer>
+    <!-- .footer -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
